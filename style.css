@@ -1,0 +1,239 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+   flex-direction: column;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link); 
+    font-weight: 300;
+
+}
+
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px; /*ancho vw, alto vh*/
+    box-sizing: border-box;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+}
+.cabecera__contenedor{
+    padding: 16px 5vw; 
+    display: flex;
+    
+}
+.cabecera__titulo {
+    font-size: 22px;
+    font-weight:700;
+    display: flex;
+}
+.cabecera__menu{
+    display: flex;
+    margin-right: 250px;
+    
+
+}
+.menu__item{
+    display: flex;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    list-style: none;
+    gap:30px;
+    margin-right: 20px
+}
+/* ------------------------------ Sección presentacion ----------------------------------*/
+
+.presentacion__contenedor{
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 5vw; 
+    gap: 20px;
+
+}
+.presentacion__titulo{
+    font-size: 46px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+}
+.presentacion__subtitulo{
+font-size: 24px;
+
+}
+.presentacion__foto{
+    width: 350px;
+    margin-right: 150px;
+    float:right;
+    border-radius: 10000px;
+   
+      
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+     
+}
+
+.redes__img{
+    display: inline;
+    gap:5px;
+    margin-right: 40px;
+}
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi{
+    padding: 16px 5vw;  
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades{
+    padding: 16px 5vw; 
+    text-align:center ;
+}
+    
+.habilidades__titulo{
+    text-align:center;
+    justify-content: space-around;
+}
+.habilidades__elemento{
+    display: inline-block;
+    margin-right:100px;
+    flex-direction: row-reverse;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones{
+    padding: 16px 5vw; 
+    text-align:center ;  
+}
+.aficiones__titulo{
+justify-content: center;
+display: inline-block;
+text-align:center;
+    
+}
+.aficiones__elemento{
+    display: inline-block;
+    margin-right:80px;
+    
+    
+}
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.formacion{
+    padding: 24px 5vw;
+}
+
+.formacion__titulo{
+    text-align:center;
+    justify-content: space-around;
+}
+.formacion__elemento{
+    display: inline-block;
+    margin-right:50px;
+    justify-content: center;
+    padding: 24px 5vw; 
+}
+
+    .proyectos{
+        padding: 16px 5vw;
+    }
+    .proyectos__titulo{
+        justify-content: space-around;
+        display: flex;
+        text-align:center;     
+    }
+    .proyectos__contenedor{
+    width: 30%;
+    display: inline-block;
+    gap:20;
+    margin-right:50px;
+    align-items: center;
+    justify-content:space-around;
+    padding: 24px 5vw; 
+    
+    }
+   
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto{
+    padding: 16px 5vw;
+}
+.contacto__titulo{
+    justify-content: center;
+    display: flex;
+    text-align:center;     
+    
+}
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    
+    .menu__item:hover{
+        text-decoration: underline;
+        font-size: 1.2rem;
+        font-weight: 500;
+        
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+}
