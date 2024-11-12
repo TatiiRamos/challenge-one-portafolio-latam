@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+   flex-direction: column;
 }
 
 ol, ul, li {
@@ -37,11 +38,10 @@ a {
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-between;
-    flex-direction: column;
     align-items: center;
-    padding: 16px 5vw; /*ancho vw, alto vh*/
+    padding: 16px 32px; /*ancho vw, alto vh*/
     box-sizing: border-box;
     background-color: var(--color-de-fondo-menu);
 }
@@ -51,24 +51,19 @@ a {
 }
 .cabecera__contenedor{
     padding: 16px 5vw; 
-}
-
-.cabecera__titulo {
-    margin-left: auto;
-    font-size: 46px;
-    font-weight:800;
     display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 16px 5vw;  
+    
 }
-
-
+.cabecera__titulo {
+    font-size: 22px;
+    font-weight:700;
+    display: flex;
+}
 .cabecera__menu{
     display: flex;
-    gap: 10px;
-    font-size: 1.2rem;
-   
+    margin-right: 250px;
+    
+
 }
 .menu__item{
     display: flex;
@@ -76,6 +71,9 @@ a {
     color: #000000;
     text-decoration: none;
     font-weight: 300;
+    list-style: none;
+    gap:30px;
+    margin-right: 20px
 }
 /* ------------------------------ Sección presentacion ----------------------------------*/
 
@@ -93,7 +91,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 50vw;
-    
 
 }
 .presentacion__subtitulo{
@@ -105,15 +102,14 @@ font-size: 24px;
     margin-right: 150px;
     float:right;
     border-radius: 10000px;
-     
-    
+   
+      
 }
 .redes{
     display: flex;
     justify-content: space-between;
     display: inline-block;
-    
-    
+     
 }
 
 .redes__img{
