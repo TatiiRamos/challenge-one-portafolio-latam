@@ -40,8 +40,6 @@ Tipografía Raleway.
 
 Previsualización del Proyecto
 
-<!-- RUTA FINAL: Debe coincidir exactamente con el nombre de la carpeta y archivo en GitHub -->
-
 Cómo Usar
 
 Clona este repositorio:
