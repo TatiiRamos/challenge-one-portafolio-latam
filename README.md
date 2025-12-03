@@ -18,23 +18,33 @@ Código Limpio: Uso de CSS modular y semántico para facilitar el mantenimiento 
 
 Tecnologías Utilizadas
 
-Tecnología             Propósito
+Tecnología
 
-HTML5                  Estructura semántica del contenido.
+Propósito
 
-CSS3                   Estilizado y diseño responsivo.
+HTML5
 
-JavaScript (ES6+)      Interactividad y validación del formulario de contacto.
+Estructura semántica del contenido.
 
-Google Fonts           Tipografía Raleway.
+CSS3
 
-![Vista Previa del Portafolio](assets/EP_portafolio1.png)
+Estilizado y diseño responsivo.
+
+JavaScript (ES6+)
+
+Interactividad y validación del formulario de contacto.
+
+Google Fonts
+
+Tipografía Raleway.
+
+Previsualización del Proyecto
 
 Cómo Usar
 
 Clona este repositorio:
 
-git clone [https://github.com/TatiiRamos/challenge-one-portafolio-latam]
+git clone [https://github.com/TatiiRamos/challenge-one-portafolio-latam](https://github.com/TatiiRamos/challenge-one-portafolio-latam)
 
 
 Abre el archivo index.html en tu navegador para visualizar el portafolio.
@@ -46,8 +56,3 @@ Si tienes alguna pregunta o quieres colaborar, puedes contactarme a través del 
 📧 Tatiiramos9@gmail.com
 
 © 2024 Tatiana Ramos. Todos los derechos reservados.
-
-
-
-
-
