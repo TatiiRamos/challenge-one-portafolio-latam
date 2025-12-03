@@ -1,5 +1,3 @@
-/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
-*/
 *{
     margin: 0;
     padding:0;
@@ -10,6 +8,8 @@
     --color-de-fondo: #F5F5F5;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
+    --color-texto-principal: #464646;
+    --color-texto-secundario: #8C8C8C;
 }
 
 body {
@@ -20,7 +20,6 @@ body {
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
-   flex-direction: column;
 }
 
 ol, ul, li {
@@ -31,209 +30,540 @@ a {
     text-decoration: none;
     color: var(--color-de-link); 
     font-weight: 300;
-
 }
 
 
 /* ------------------------------ Sección Menú -------------------------------*/
 .cabecera {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px; /*ancho vw, alto vh*/
+    padding: 16px 0;
     box-sizing: border-box;
     background-color: var(--color-de-fondo-menu);
+    display: flex;
+    justify-content: center;
 }
 
 .cabecera__logo {
-    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    max-width: 80px; 
 }
+
 .cabecera__contenedor{
-    padding: 16px 5vw; 
-    display: flex;
+    width: 100%; 
+    max-width: 1200px;
+    padding: 0 5vw; 
     
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 15px; /* Pequeño gap para evitar que los elementos se peguen en móvil/tablet */
 }
+
 .cabecera__titulo {
-    font-size: 22px;
+    font-size: 18px;
     font-weight:700;
     display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-texto-principal);
+    flex-shrink: 0; /* Evita que el título se reduzca */
 }
+
 .cabecera__menu{
     display: flex;
-    margin-right: 250px;
-    
+    gap: 30px; 
+}
 
-}
 .menu__item{
-    display: flex;
     font-size: 1rem;
-    color: #000000;
-    text-decoration: none;
     font-weight: 300;
-    list-style: none;
-    gap:30px;
-    margin-right: 20px
 }
+/* El último item del menú que es el correo, solo se muestra en móvil */
+.menu__item:last-child {
+    display: none; 
+}
+/* ------------------------------ Estilos del Botón de Correo en Header -------------------------------*/
+.correo-header a {
+    padding: 8px 14px;
+    background-color: #2A7AE4;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background .3s;
+    white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+.correo-header a:hover {
+    background-color: #1a5bbd;
+}
+
+
 /* ------------------------------ Sección presentacion ----------------------------------*/
+
+.presentacion{
+    display: flex;
+    flex-direction: column-reverse; /* Foto arriba en móvil, luego texto */
+    padding: 32px 5vw;
+    gap: 20px;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .presentacion__contenedor{
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    padding: 16px 5vw; 
-    gap: 20px;
-
+    gap: 16px;
+    width: 100%; 
 }
+
 .presentacion__titulo{
-    font-size: 46px;
+    font-size: 2rem; 
     font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-
+    color: var(--color-texto-principal);
 }
+
 .presentacion__subtitulo{
-font-size: 24px;
+    font-size: 1rem; 
+    color: var(--color-texto-secundario);
+}
 
-}
 .presentacion__foto{
-    width: 350px;
-    margin-right: 150px;
-    float:right;
-    border-radius: 10000px;
-   
-      
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
 }
+
 .redes{
     display: flex;
-    justify-content: space-between;
-    display: inline-block;
-     
+    gap: 16px;
+    padding: 0;
 }
 
-.redes__img{
-    display: inline;
-    gap:5px;
-    margin-right: 40px;
+.redes__img a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-link);
 }
+.redes__img a:hover {
+    text-decoration: underline;
+}
+
 /* ------------------------------ Sección sobre mí ----------------------------------*/
 
 .sobre-mi{
-    padding: 16px 5vw;  
+    padding: 32px 5vw;
+    background-color: #EAF2FD; 
+    
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
+.sobre-mi__titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--color-texto-principal);
+}
+.sobre-mi__texto {
+    color: var(--color-texto-secundario);
+    margin-bottom: 16px;
+    max-width: 800px; 
+    width: 100%; 
+    text-align: left;
+}
+
 
 /*------------------------------ Sección de Habilidades ------------------------------*/
 
-.habilidades{
-    padding: 16px 5vw; 
+.habilidades, .aficiones {
+    padding: 32px 5vw; 
     text-align:center ;
 }
     
-.habilidades__titulo{
+.habilidades__titulo, .aficiones__titulo, .formacion__titulo, .proyectos__titulo {
+    font-size: 1.5rem;
     text-align:center;
-    justify-content: space-around;
+    margin-bottom: 32px;
+    color: var(--color-texto-principal);
 }
-.habilidades__elemento{
-    display: inline-block;
-    margin-right:100px;
-    flex-direction: row-reverse;
+/* Usamos Grid para organizar las listas de habilidades y aficiones */
+.habilidades__lista, .aficiones__lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/*------------------------------ Sección de Aficiones --------------------------------*/
-.aficiones{
-    padding: 16px 5vw; 
-    text-align:center ;  
-}
-.aficiones__titulo{
-justify-content: center;
-display: inline-block;
-text-align:center;
+.habilidades__elemento, .aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-start; 
     
+    /* Estilo de la tarjeta */
+    background-color: var(--color-de-fondo-menu);
+    padding: 16px;
+    min-height: 80px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.aficiones__elemento{
-    display: inline-block;
-    margin-right:80px;
-    
-    
+.habilidades__nombre, .aficiones__nombre{
+    font-weight: 700;
+    margin-top: 8px;
+    color: var(--color-texto-principal);
 }
-/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+/*------------------------------ Sección de Formación --------------------------------*/
 .formacion{
-    padding: 24px 5vw;
+    padding: 32px 5vw;
+    background-color: #EAF2FD;
 }
-
-.formacion__titulo{
-    text-align:center;
-    justify-content: space-around;
-}
-.formacion__elemento{
-    display: inline-block;
-    margin-right:50px;
-    justify-content: center;
-    padding: 24px 5vw; 
-}
-
-    .proyectos{
-        padding: 16px 5vw;
-    }
-    .proyectos__titulo{
-        justify-content: space-around;
-        display: flex;
-        text-align:center;     
-    }
-    .proyectos__contenedor{
-    width: 30%;
-    display: inline-block;
-    gap:20;
-    margin-right:50px;
+.formacion__lista{
+    display: flex;
+    flex-direction: column; 
+    gap: 24px;
     align-items: center;
-    justify-content:space-around;
-    padding: 24px 5vw; 
+}
+
+.formacion__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     
-    }
-   
+    width: 100%;
+    max-width: 300px; 
+    
+    background-color: var(--color-de-fondo-menu);
+    padding: 24px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.formacion__nombre{
+    font-weight: 700;
+    margin-top: 8px;
+    color: var(--color-texto-principal);
+}
+.formacion__detalle{
+    color: var(--color-texto-secundario);
+}
+.formacion__icono{
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+    
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos{
+    padding: 32px 5vw;
+}
+
+/* CONTENEDOR PRINCIPAL: Uso Grid para la disposición */
+.proyectos__contenedor-lista{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 32px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TARJETA INDIVIDUAL DE PROYECTO */
+.proyectos__contenedor{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 16px;
+    background-color: var(--color-de-fondo-menu);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.proyectos__contenedor img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 4px;
+}
+.proyectos__contenedor-descripcion {
+    width: 100%;
+    text-align: left;
+}
+.proyectos__contenedor-botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.proyectos__boton {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.proyectos__boton--repo {
+    background-color: transparent;
+    border: 1px solid var(--color-de-link);
+    color: var(--color-de-link);
+}
+.proyectos__boton--demo {
+    background-color: #2A7AE4; /* Azul */
+    color: white;
+    border: 1px solid #2A7AE4;
+}
+.proyectos__boton--repo:hover {
+    background-color: #eee;
+}
+.proyectos__boton--demo:hover {
+    background-color: #1a5bbd;
+}
+    
 /*------------------------------ Sección de Contacto ---------------------------------*/
 .contacto{
-    padding: 16px 5vw;
+    padding: 32px 5vw;
+    background-color: var(--color-de-fondo-menu);
 }
 .contacto__titulo{
-    justify-content: center;
+    text-align:center;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    color: var(--color-texto-principal);
+}
+.contacto__formulario {
     display: flex;
-    text-align:center;     
-    
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contacto__campo-grupo {
+    display: flex;
+    flex-direction: column;
+}
+.contacto__campo {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.contacto__campo--textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.contacto__boton {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2A7AE4; 
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.contacto__boton:hover {
+    background-color: #1a5bbd;
 }
 
-/* ------------------------------ Responsividad ---------------------------------------*/
+/* Estilos para que el campo se vea con un borde rojo al fallar */
+.contacto__campo.error {
+    border: 2px solid red;
+}
 
-/* Tablets y pantallas más grandes */
-@media (min-width: 768px) {
-    .cabecera {
-        flex-direction: row;
-        justify-content: space-between;
+/* Estilos para el texto de error (Actualizado) */
+.error-mensaje {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block; 
+}
+
+/* ------------------------------ Footer ----------------------------------*/
+.rodapie {
+    text-align: center;
+    padding: 24px 0;
+    font-size: 0.8rem;
+    color: var(--color-texto-secundario);
+    border-top: 1px solid #ccc;
+}
+
+/* ----------------------- MENÚ HAMBURGUESA Y RESPONSIVIDAD ---------------------------- */
+
+.menu__hamburguesa {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--color-texto-principal);
+}
+
+/* Móvil (hasta 768px) */
+@media (max-width: 768px) {
+
+    .menu__hamburguesa {
+        display: block; /* aparece la hamburguesa */
+    }
+
+    /* ********** INICIO DEL CAMBIO ********** */
+    /* REMOVIDO: .correo-header { display: none; } para que el botón de correo siempre se vea en móvil */
+    /* ********** FIN DEL CAMBIO ********** */
+
+    .cabecera__menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+
+        /* Oculto por defecto */
+        display: none;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    /* Mostrar cuando se activa */
+    .cabecera__menu.cabecera__menu--abierto {
+        display: flex;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        width: 100%;
         align-items: center;
+        gap: 20px;
     }
 
-    .cabecera__logo {
-        max-width: 100px;
-    }
-
-    .cabecera__titulo {
-        font-size: 1.5rem;
-    }
-
-    
-    .menu__item:hover{
-        text-decoration: underline;
-        font-size: 1.2rem;
-        font-weight: 500;
-        
+    .menu__item:last-child {
+        display: block; /* Se muestra el correo en el menú desplegable móvil */
+        font-weight: 700;
     }
 }
 
-/* Pantallas grandes */
+
+/* Tablets y pantallas más grandes (769px+) */
+@media (min-width: 769px) {
+    /* -------------------- AJUSTE DE DISTRIBUCIÓN DE CABECERA -------------------- */
+    .cabecera__contenedor {
+        /* Permite que margin: auto empuje los elementos */
+        justify-content: flex-start;
+    }
+    
+    .cabecera__menu {
+        /* CRUCIAL: Empuja el menú (y el siguiente elemento) a la derecha */
+        margin-left: auto; 
+        /* Reducido para acercar el botón de correo al margen derecho */
+        margin-right: 15px; 
+
+        /* Asegura el display de navegación de escritorio */
+        display: flex !important;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .menu__hamburguesa {
+        display: none;
+    }
+
+    .menu__lista {
+        display: flex; 
+        flex-direction: row;
+        gap: 30px;
+    }
+    
+    /* El correo como ítem de lista se oculta en escritorio */
+    .menu__item:last-child {
+        display: none; 
+    }
+
+    /* --- PRESENTACIÓN --- */
+    .presentacion {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start; 
+        gap: 50px;
+    }
+    .presentacion__contenedor {
+        width: 60%; 
+    }
+    .presentacion__foto {
+        width: 250px; 
+        height: 250px;
+        order: 2; 
+    }
+    .presentacion__titulo{
+        font-size: 2.5rem;
+    }
+    .presentacion__subtitulo{
+        font-size: 1.25rem;
+    }
+    
+    /* --- HABILIDADES & AFICIONES (Grid) --- */
+    .habilidades__lista, .aficiones__lista {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    /* --- FORMACIÓN --- */
+    .formacion__lista{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 32px;
+    }
+    .formacion__elemento{
+        max-width: 250px;
+    }
+
+    /* --- PROYECTOS --- */
+    .proyectos__contenedor-lista{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 32px; 
+    }
+    
+    .proyectos__contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .proyectos__contenedor img {
+        height: 150px; 
+        width: 100%;
+    }
+    
+    .proyectos__contenedor-descripcion {
+        text-align: left;
+    }
+    .proyectos__contenedor-botones {
+        justify-content: center;
+    }
+}
+
+/* Pantallas grandes (1024px+) */
 @media (min-width: 1024px) {
-    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
     .cabecera__titulo {
         font-size: 1.8rem;
+    }
+
+    .presentacion__foto {
+        width: 350px; 
+        height: 350px;
+    }
+    .presentacion__titulo{
+        font-size: 3rem;
+    }
+    
+    /* --- HABILIDADES & AFICIONES (Grid) --- */
+    .habilidades__lista, .aficiones__lista {
+        grid-template-columns: repeat(6, 1fr); 
+    }
+    /* --- PROYECTOS (Mantener 2x2) --- */
+    .proyectos__contenedor-lista{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
