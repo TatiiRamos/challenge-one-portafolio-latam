@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,32 +15,47 @@
 
 <body>
     <!-- Menú -->
-     <section class="cabecera">
-    <header class="cabecera__contenedor">
-       <span class cabecera__titulo><img src="/assets/vector.png"  alt="cabecera__titulo" srcset="">Tatiana Ramos</span>
-        <ul class ="cabecera__menu"></ul>
-                <li class="menu__item"><a href= "" class="link">Sobre mi</a></li>
-                <li class="menu__item"><a href="" class="link">Skills</a></li>
-                <li class="menu__item"><a href="" class="link">Hobbies</a></li>
-                <li class="menu__item"><a href="" class="link">Formación</a></li>
-                <li class="menu__item"><a href="" class="link">Proyectos</a></li>
-                <li class="menu__item"><a href="" class="link">Tatiiramos9@gmail.com</a></li>
+    <header>
+        <!-- El contenedor ya no tiene estilos en línea -->
+        <div class="cabecera__contenedor">
+            <!-- Uso de h1 para el nombre del sitio (queda a la izquierda) -->
+            <h1 class="cabecera__titulo">
+                <img src="assets/vector.png" alt="Icono de Tatiana Ramos">
+                Tatiana Ramos
+            </h1>
+            <div class="menu__hamburguesa" id="menu-hamburguesa">☰</div>
+            <!-- Uso de nav para la navegación principal (queda a la derecha) -->
+            <nav class="cabecera__menu">
+                <!-- La lista ya no tiene estilos en línea -->
+                <ul class="menu__lista" id="menu-lista">
+                <!-- Todos tus li aquí -->
+                <li class="menu__item"><a href="#sobre-mi" class="link">Sobre mi</a></li>
+                <li class="menu__item"><a href="#habilidades" class="link">Skills</a></li>
+                <li class="menu__item"><a href="#aficiones" class="link">Hobbies</a></li>
+                <li class="menu__item"><a href="#formacion" class="link">Formación</a></li>
+                <li class="menu__item"><a href="#proyectos" class="link">Proyectos</a></li>
+                <!-- Este item se oculta en escritorio, pero se muestra en el menú móvil -->
+                <li class="menu__item"><a href="#contacto" class="link">Tatiiramos9@gmail.com</a></li>
             </ul>
-        </nav>
-    </section>
+            </nav>
+            <!-- BOTÓN DE CORREO: Visible solo en escritorio, posicionado en la cabecera -->
+            <div class="correo-header">
+                <a href="mailto:Tatiiramos9@gmail.com">Tatiiramos9@gmail.com</a>
+            </div>
+        </div>
     </header>
-
+    
     <!-- Sección de Presentación -->
     <section class="presentacion">
-        <img class="presentacion__foto" src="/assets/Tati_desarrollando.jpg" width="100%" alt="Foto de perfil">
+        <img class="presentacion__foto" src="assets/TatiiRamos-Awaq.jpg" width="100%" alt="Foto de perfil">
         <div class="presentacion__contenedor">
-            <h2 class="presentacion__titulo">Hola, mi nombre es Tatiana Ramos y construyo páginas web</h2>
-            <p class="presentacion__subtitulo">Soy formada en Udemy, Codigo facilito y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+            <h2 class="presentacion__titulo">¡Hola! Soy Tatiana Ramos, Desarrolladora Front-end con pasión por el código y el impacto social.</h2>
+            <p class="presentacion__subtitulo">Mi formación incluye Udemy, Codigo Facilito y Oracle - Alura Latam. Actualmente soy Desarrolladora Front-end voluntaria en AWAQ ONG, y en 2026 comenzaré la Licenciatura en Ciberseguridad en la Universidad Nacional Raúl Scalobrini Ortiz. </p>
             <ul class="redes">
                 <li class="redes__img"><a href="https://github.com/TatiiRamos">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
                 <li class="redes__img"><a href="https://www.linkedin.com/in/tatiana-ramos-gpti/">Linkedin <img src="assets/arrow.png" alt="Flecha" ></a></li>
                 <!--<li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>-->
-                <li class="redes__img"><a href="/assets/TatianaRamos_CV.pdf">Currículum <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="./assets/TatianaRamosCV.pdf">Currículum <img src="assets/arrow.png" alt="Flecha"></a></li>
             </ul>
         </div>
     </section>
@@ -48,12 +63,11 @@
     <!-- Sección sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
         <h2 class="sobre-mi__titulo">Sobre mí</h2>
-        <p class="sobre-mi__texto">Soy Tatiana Ramos, desarrolladora web especializado en HTML, CSS y JavaScript. Me dedico a crear sitios web funcionales, atractivos y optimizados para ofrecer la mejor experiencia de usuario.</p>
-        <p class="sobre-mi__texto">HTML: Estructuro contenido de manera clara y semántica.
-            CSS: Diseño interfaces visualmente atractivas, con especial atención a la adaptabilidad y responsividad.
-            JavaScript: Implemento funcionalidades interactivas para mejorar la experiencia del usuario.
-            Mi objetivo es construir soluciones eficientes y creativas que resuelvan las necesidades del cliente.
-            
+        <p class="sobre-mi__texto">Soy Tatiana Ramos, una Desarrolladora Front-end especializada en crear experiencias web robustas y seguras. Mi enfoque se centra en la tripleta esencial: HTML (estructura semántica y clara), CSS (diseño adaptable y responsivo) y JavaScript (funcionalidades interactivas que potencian la experiencia del usuario).
+
+Mi pasión por el código se complementa con mi compromiso social, donde aporto como voluntaria y Desarrolladora Front-end en AWAQ ONG. A lo largo de mi experiencia, he desarrollado una fuerte conciencia sobre la importancia de la seguridad web, aplicando buenas prácticas para prevenir vulnerabilidades desde la fase de desarrollo.
+
+Mi objetivo es fusionar la excelencia estética y funcional con la eficiencia y la protección, asegurando que cada solución no solo sea atractiva, sino también una base sólida para el futuro.
             </p>
         <!-- Firma opcional 
         <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">-->
@@ -64,30 +78,31 @@
         <h2 class="habilidades__titulo">Skills</h2>
         <ul class="habilidades__lista">
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="/assets/html5_icon.png" width="40" alt="HTML">
+                <img class="habilidades__icono" src="assets/html5_icon.png" width="40" alt="HTML">
                 <p class="habilidades__nombre">HTML 5</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="/assets/js_icon.png" alt="JavaScript">
+                <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
                 <p class="habilidades__nombre">JavaScript</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="/assets/php_icon.png" alt="PHP">
+                <img class="habilidades__icono" src="assets/php_icon.png" alt="PHP">
                 <p class="habilidades__nombre">PHP</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="/assets/nodejs_icon.png" alt="Node.js">
+                <img class="habilidades__icono" src="assets/nodejs_icon.png" alt="Node.js">
                 <p class="habilidades__nombre">Node.js</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="/assets/react_icon.png" alt="React">
+                <img class="habilidades__icono" src="assets/react_icon.png" alt="React">
                 <p class="habilidades__nombre">React</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="/assets/css_icon.png" alt="CSS">
+                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
                 <p class="habilidades__nombre">CSS</p>
             </li>
         </ul>
+        <!-- ELIMINADO: El botón de correo fue movido a la cabecera -->
     </section>
 
     <!-- Sección de Aficiones -->
@@ -95,27 +110,27 @@
         <h2 class="aficiones__titulo">Hobbies</h2>
         <ul class="aficiones__lista">
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="/assets/skate_icon.png" alt="Patinaje">
+                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
                 <p class="aficiones__nombre">Patinaje</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="/assets/pole_icon.png" width="40"; alt="Pole Dance">
+                <img class="aficiones__icono" src="assets/pole_icon.png" width="40" alt="Pole Dance">
                 <p class="aficiones__nombre">Pole Dance</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="/assets/headphones_icon.png" alt="Oír música">
+                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
                 <p class="aficiones__nombre">Oír música</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="/assets/tv_icon.png" alt="Ver series">
+                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
                 <p class="aficiones__nombre">Ver series</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="/assets/forkspoon_icon.png" alt="Cocinar">
+                <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
                 <p class="aficiones__nombre">Cocinar</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="/assets/camera_icon.png" alt="Tomar fotos">
+                <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
                 <p class="aficiones__nombre">Tomar fotos</p>
             </li>
         </ul>
@@ -126,21 +141,21 @@
         <h2 class="formacion__titulo">Formación</h2>
         <ul class="formacion__lista">
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="/assets/udemy_icono.png" width="200" alt="udemy">
+                <img class="formacion__icono" src="assets/udemy_icono.png" width="200" alt="udemy">
                 <div>
                     <h3 class="formacion__nombre">Programacion</h3>
                     <p class="formacion__detalle">2020 - Udemy</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="/assets/codigo-facilito.png" width="200" alt="CF">
+                <img class="formacion__icono" src="assets/codigo-facilito.png" width="200" alt="CF">
                 <div>
                     <h3 class="formacion__nombre">Back end</h3>
                     <p class="formacion__detalle">En curso - codigo facilito</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="/assets/alura_latam.png" width= "150" alt="alura">
+                <img class="formacion__icono" src="assets/alura_latam.png" width= "150" alt="alura">
                 <div>
                     <h3 class="formacion__nombre">Front end</h3>
                     <p class="formacion__detalle">En curso - Alura</p>
@@ -151,35 +166,123 @@
 
     <!-- Sección de Proyectos -->
     <section class="proyectos" id="proyectos">
-        <h2 class="proyectos__titulo">Experiencia Profesional</h2>
-        <div class="proyectos__contenedor">
-            <img src="/assets/EP_portafolio1.png" width="300" alt ="img_portfolio">
-             <!--<h3 class="proyectos__nombre">Mi Pagina Web</h3>
-            <p class="proyectos__descripcion"> Página web diseñada con HTML y CSS que presenta una estructura clara y atractiva, con secciones de inicio, servicios y contacto, optimizada para una navegación sencilla y visualmente moderna.</p>-->
+        <h3 class="proyectos__titulo">Experiencia Profesional</h3>
+        
+        <div class="proyectos__contenedor-lista">
+            <div class="proyectos__contenedor">
+                ![Imagen de Portafolio](assets/EP_portafolio1.png)
+            <img src="assets/EP_portafolio1.png" width="300" alt ="img_portfolio">
+             <h3 class="proyectos__nombre">Mi Pagina Web</h3>
+             <p class="proyectos__descripcion"> Página web diseñada con HTML y CSS que presenta una estructura clara y atractiva, con secciones de inicio, servicios y contacto, optimizada para una navegación sencilla y visualmente moderna.</p>
+        </div>
+             <div class="proyectos__contenedor">
+            <img src="assets/EP_portafolio2.png" width="300" alt="img_portfolio1">
+            <h3 class="proyectos__nombre">Juego en linea</h3>
+            <p class="proyectos__descripcion">El Juego Secreto: Un juego simple de adivinanza en el que el jugador intenta descubrir un número secreto del 1 al 10. Con cada intento, el juego brinda pistas para ayudar al jugador a encontrar el número correcto.</p>
         </div>
         <div class="proyectos__contenedor">
-            <img src="/assets/EP_portafolio2.png" width="300" alt="img_portfolio1">
-             <!--<h3 class="proyectos__nombre">Juego en linea</h3>
-            <p class="proyectos__descripcion">El Juego Secreto: Un juego simple de adivinanza en el que el jugador intenta descubrir un número secreto del 1 al 10. Con cada intento, el juego brinda pistas para ayudar al jugador a encontrar el número correcto.</p>-->
+            <img src="assets/Tatii_programando.png" width="300" alt="img_portfolio2">
+            <h3 class="proyectos__nombre">Portafolio CV</h3>
+            <p class="proyectos__descripcion">Portafolio personal, donde encontraras datos personales, CV e informacion importante sobre mi </p>
         </div>
         <div class="proyectos__contenedor">
-            <img src="/assets/Tatii_programando.png" width="300" alt="img_portfolio2">
+            <img src="assets/Tatii_desarrollando2.png" width="300" alt="img_portfolio3">
+            <h3 class="proyectos__nombre">Portafolio Personal</h3>
+             <p class="proyectos__descripcion">Pagina web personal dinamica, responsiva y moderna</p>
         </div>
-        <div class="proyectos__contenedor">
-            <img src="/assets/Tatii_desarrollando2.png" width="300" alt="img_portfolio3">
         </div>
     </section>
 
     <!-- Sección de Contacto -->
     <section class="contacto" id="contacto">
         <h2 class="contacto__titulo">Contacto</h2>
-        <form class="contacto__formulario">
-            <input class="contacto__campo" type="text" placeholder="Nombre">
-            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
-            <textarea class="contacto__campo contacto__campo--textarea" placeholder="Mensaje"></textarea>
-            <button class="contacto__boton" type="submit">Enviar</button>
-        </form>
+        <div id="feedback-container"></div>
+        <form class="contacto__formulario" id="form-contacto" onsubmit="validarFormulario(event)" method="GET" novalidate>
+        <div class="contacto__campo-grupo">
+            <input class="contacto__campo" type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <span class="error-mensaje" id="error-nombre"></span> 
+    </div>
+    <div class="contacto__campo-grupo">
+          <input class="contacto__campo" type="email" id="email" name="email" placeholder="Correo Electrónico">
+          <span class="error-mensaje" id="error-email"></span> 
+    </div>
+        <div class="contacto__campo-grupo">
+        <textarea class="contacto__campo contacto__campo--textarea" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+          <span class="error-mensaje" id="error-mensaje"></span> 
+    </div>
+    <button class="contacto__boton" type="submit">Enviar</button>
+    </form>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuHamburguesa = document.getElementById('menu-hamburguesa');
+            const menuLista = document.getElementById('menu-lista');
+
+            if (menuHamburguesa && menuLista) {
+                menuHamburguesa.addEventListener('click', () => {
+                    // Alternar la clase que lo hace visible
+                    menuLista.classList.toggle('cabecera__menu--abierto');
+                });
+                
+                // Ocultar el menú al hacer clic en un enlace (UX móvil)
+                menuLista.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menuLista.classList.remove('cabecera__menu--abierto');
+                    });
+                });
+            }
+        });
+
+        // Función de validación (asumiendo que 'script.js' la contiene, pero la dejo aquí en línea para evitar errores si el archivo no existe)
+        function validarFormulario(event) {
+            event.preventDefault(); // Prevenir el envío por defecto
+
+            let valido = true;
+            
+            const nombre = document.getElementById('nombre');
+            const email = document.getElementById('email');
+            const mensaje = document.getElementById('mensaje');
+            
+            const errorNombre = document.getElementById('error-nombre');
+            const errorEmail = document.getElementById('error-email');
+            const errorMensaje = document.getElementById('error-mensaje');
+
+            // Limpiar errores previos
+            errorNombre.textContent = '';
+            errorEmail.textContent = '';
+            errorMensaje.textContent = '';
+
+            // Validación de Nombre (no vacío)
+            if (nombre.value.trim() === '') {
+                errorNombre.textContent = 'El nombre es obligatorio.';
+                valido = false;
+            }
+
+            // Validación de Email (formato básico)
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                errorEmail.textContent = 'Ingrese un correo electrónico válido.';
+                valido = false;
+            }
+
+            // Validación de Mensaje (no vacío)
+            if (mensaje.value.trim() === '') {
+                errorMensaje.textContent = 'El mensaje es obligatorio.';
+                valido = false;
+            }
+
+            const feedbackContainer = document.getElementById('feedback-container');
+            feedbackContainer.innerHTML = '';
+
+            if (valido) {
+                // Aquí iría la lógica de envío real (e.g., fetch, firebase, etc.)
+                feedbackContainer.innerHTML = '<p style="color: green; text-align: center; margin-bottom: 15px;">Mensaje enviado con éxito (simulado).</p>';
+                document.getElementById('form-contacto').reset();
+            } else {
+                feedbackContainer.innerHTML = '<p style="color: red; text-align: center; margin-bottom: 15px;">Por favor, corrige los errores del formulario.</p>';
+            }
+        }
+    </script>
 </body>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> Ya no es necesario si la validación está en línea -->
 </html>
