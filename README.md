@@ -32,7 +32,7 @@ Cómo Usar
 
 Clona este repositorio:
 
-git clone [TU-URL-DEL-REPOSITORIO]
+git clone [https://github.com/TatiiRamos/challenge-one-portafolio-latam]
 
 
 Abre el archivo index.html en tu navegador para visualizar el portafolio.
@@ -44,6 +44,7 @@ Si tienes alguna pregunta o quieres colaborar, puedes contactarme a través del 
 📧 Tatiiramos9@gmail.com
 
 © 2024 Tatiana Ramos. Todos los derechos reservados.
+
 
 
 
