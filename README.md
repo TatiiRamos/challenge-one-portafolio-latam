@@ -40,6 +40,8 @@ Tipografía Raleway.
 
 Previsualización del Proyecto
 
+![Vista Previa del Portafolio](assets/EP_portafolio1.png)
+
 Cómo Usar
 
 Clona este repositorio:
@@ -56,3 +58,4 @@ Si tienes alguna pregunta o quieres colaborar, puedes contactarme a través del 
 📧 Tatiiramos9@gmail.com
 
 © 2024 Tatiana Ramos. Todos los derechos reservados.
+
