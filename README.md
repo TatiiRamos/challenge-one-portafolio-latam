@@ -1,24 +1,49 @@
-# Challenge ONE | Front End -  Portafolio
+Portafolio Personal - Tatiana Ramos
 
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
-</p>
+Descripción del Proyecto
+
+Este es mi portafolio personal, soy Tatiana Ramos, una desarrolladora web especializada en la creación de interfaces de usuario modernas, atractivas y completamente responsivas.
+
+El objetivo principal de este proyecto es presentar mis habilidades técnicas (Skills), formación académica y proyectos destacados, ofreciendo una experiencia de usuario fluida y accesible en cualquier dispositivo.
+
+Características Clave
+
+Diseño Responsivo: Implementación de un diseño "Mobile First" garantizando una visualización óptima en móviles, tabletas y escritorios.
+
+Secciones Claras: Estructura de navegación simple que incluye: Presentación, Sobre Mí, Habilidades, Aficiones, Formación, Proyectos y Contacto.
+
+Validación de Formulario: Implementación de JavaScript para la validación del formulario de contacto en tiempo real, con mensajes de error descriptivos e indicación de éxito en el DOM.
+
+Código Limpio: Uso de CSS modular y semántico para facilitar el mantenimiento y la escalabilidad.
+
+Tecnologías Utilizadas
+
+Tecnología             Propósito
+
+HTML5                  Estructura semántica del contenido.
+
+CSS3                   Estilizado y diseño responsivo.
+
+JavaScript (ES6+)      Interactividad y validación del formulario de contacto.
+
+Google Fonts           Tipografía Raleway.
+
+Cómo Usar
+
+Clona este repositorio:
+
+git clone [TU-URL-DEL-REPOSITORIO]
 
 
-### ¡Bienvenido al proyecto base del Portafolio ! Pasos principales:
----
-#### Marca este proyecto con una estrella ⭐
-#### Sigue las lecciones y las instrucciones de contenido 📚
+Abre el archivo index.html en tu navegador para visualizar el portafolio.
 
-### Analisando el repositorio!
----
-### Este repositorio base es una sugerencia inicial, en caso de que aún no tengas un diseño que refleje tu estilo y personalidad. Siéntete libre de modificar tu portafolio como desees, aquí encontrarás:
-#### 🔹index.html: Documento HTML concluído que puedes utilizar en tu proyecto. Las fuentes, los archivos CSS y Javascript ya están referenciados en el documento y todas las secciones contienen comentários que te ayudan a entender la estructura. Si quieres, puedes aventurarte y contruir tu propio HTML.
-#### 🔹style.css: Documento de CSS con instrucciones de estilo y algunas sugerencias de desarrollo.
-#### 🔹script.js: Documento vacío dónde puedes desarrollar tu lógica para validar el formulário, ESTA VALIDACIÓN ES CONSIDERADA UN DESAFÍO EXTRA POR LO QUE NO ES OBLIGATÓRIA SU IMPLEMENTACIÓN.
+Contacto
 
-#### Cuando clones o descargues el proyecto base, tendrás la siguiente presentación:
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169064699-f268715c-822c-4335-b066-97a1bc1ea8e1.png">
-</p>
+Si tienes alguna pregunta o quieres colaborar, puedes contactarme a través del formulario de contacto en la página o directamente por correo electrónico:
+
+📧 Tatiiramos9@gmail.com
+
+© 2024 Tatiana Ramos. Todos los derechos reservados.
+
+
 
