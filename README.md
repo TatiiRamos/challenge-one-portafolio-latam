@@ -1,58 +1,38 @@
-Portafolio Personal - Tatiana Ramos
+# Portafolio Personal - Tatiana Ramos
 
-Descripción del Proyecto
+Este es mi portafolio personal, donde presento mi trabajo como desarrolladora web especializada en interfaces modernas y responsivas.
 
-Este es mi portafolio personal, soy Tatiana Ramos, una desarrolladora web especializada en la creación de interfaces de usuario modernas, atractivas y completamente responsivas.
-
+## 🚀 Descripción del Proyecto
 El objetivo principal de este proyecto es presentar mis habilidades técnicas (Skills), formación académica y proyectos destacados, ofreciendo una experiencia de usuario fluida y accesible en cualquier dispositivo.
 
-Características Clave
+## ✨ Características Clave
+* **Diseño Responsivo:** Implementación "Mobile First" para una visualización óptima en cualquier dispositivo.
+* **Secciones Claras:** Navegación simple que incluye: Sobre Mí, Habilidades, Formación, Proyectos y Contacto.
+* **Validación de Formulario:** JS para validación en tiempo real con mensajes descriptivos en el DOM.
+* **Código Limpio:** Uso de CSS modular y semántico.
 
-Diseño Responsivo: Implementación de un diseño "Mobile First" garantizando una visualización óptima en móviles, tabletas y escritorios.
+## 🛠️ Tecnologías Utilizadas
 
-Secciones Claras: Estructura de navegación simple que incluye: Presentación, Sobre Mí, Habilidades, Aficiones, Formación, Proyectos y Contacto.
+| Tecnología | Propósito |
+| :--- | :--- |
+| **HTML5** | Estructura semántica del contenido. |
+| **CSS3** | Estilizado y diseño responsivo. |
+| **JavaScript (ES6+)** | Interactividad y validación del formulario. |
+| **Google Fonts** | Tipografía Raleway. |
 
-Validación de Formulario: Implementación de JavaScript para la validación del formulario de contacto en tiempo real, con mensajes de error descriptivos e indicación de éxito en el DOM.
+## 🔗 Previsualización del Proyecto
+[👉 Haz clic aquí para ver mi portafolio](https://github.com/TatiiRamos/challenge-one-portafolio-latam)
 
-Código Limpio: Uso de CSS modular y semántico para facilitar el mantenimiento y la escalabilidad.
+## 💻 Cómo Usar
+1. Clona este repositorio:
+   ```bash
+   git clone [https://github.com/TatiiRamos/challenge-one-portafolio-latam](https://github.com/TatiiRamos/challenge-one-portafolio-latam)
 
-Tecnologías Utilizadas
+   📧 Contacto
+Si tienes alguna pregunta o quieres colaborar, puedes contactarme:
 
-Tecnología
+Correo: Tatiiramos9@gmail.com
 
-Propósito
-
-HTML5
-
-Estructura semántica del contenido.
-
-CSS3
-
-Estilizado y diseño responsivo.
-
-JavaScript (ES6+)
-
-Interactividad y validación del formulario de contacto.
-
-Google Fonts
-
-Tipografía Raleway.
-
-Previsualización del Proyecto
-
-Cómo Usar
-
-Clona este repositorio:
-
-git clone [https://github.com/TatiiRamos/challenge-one-portafolio-latam](https://github.com/TatiiRamos/challenge-one-portafolio-latam)
-
-
-Abre el archivo index.html en tu navegador para visualizar el portafolio.
-
-Contacto
-
-Si tienes alguna pregunta o quieres colaborar, puedes contactarme a través del formulario de contacto en la página o directamente por correo electrónico:
-
-📧 Tatiiramos9@gmail.com
+LinkedIn: https://www.linkedin.com/in/tatiana-ramos-gpti/
 
 © 2024 Tatiana Ramos. Todos los derechos reservados.
